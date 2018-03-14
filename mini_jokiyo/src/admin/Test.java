@@ -1,10 +1,10 @@
 package admin;
 
-import admin.ui.AdminMainUI;
+import mini_jokiyo.admin.ui.AdminUI;
 
 public class Test {
 	public static void main(String[] args) {
-		AdminMainUI ui = new AdminMainUI();
+		AdminUI ui = new AdminUI();
 		try {
 			ui.service();
 		} catch (Exception e) {

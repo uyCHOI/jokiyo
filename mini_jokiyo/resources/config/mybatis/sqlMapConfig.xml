@@ -14,7 +14,11 @@
 	<!-- SQL의 결과를 담을 VO 객체들의 별칭을 설정하여 사용의 편의를 도모  
 	mapper xml 파일에서 설정된  alias를 사용할수 있다.-->
 	<typeAliases>
-		<typeAlias alias="user"  type="mini_jokiyo.user.domain.User" />
+		<typeAlias alias="user"  type="mini_jokiyo.domain.User" />
+		<typeAlias alias="menu"  type="mini_jokiyo.domain.Menu" />
+		<typeAlias alias="rest"  type="mini_jokiyo.domain.Rest" />
+		<typeAlias alias="restType"  type="mini_jokiyo.domain.RestType" />
+		<typeAlias alias="review"  type="mini_jokiyo.domain.Review" />
 	</typeAliases>
 	
 	<environments default="development">
@@ -31,5 +35,8 @@
 
 	<mappers>
 		<mapper resource="config/sqlmap/oracle/user.xml"/>
+		<mapper resource="config/sqlmap/oracle/admin.xml"/>
+		<mapper resource="config/sqlmap/oracle/rest.xml"/>
+		<mapper resource="config/sqlmap/oracle/stat.xml"/>
 	</mappers>
 </configuration>
