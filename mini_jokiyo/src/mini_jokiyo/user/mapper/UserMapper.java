@@ -6,5 +6,4 @@ import mini_jokiyo.user.domain.User;
 
 public interface UserMapper {
 	List<User> selectUser();
-	
 }
